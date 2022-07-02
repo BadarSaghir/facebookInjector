@@ -36,12 +36,13 @@ export const fbCard = (post:Posts):String => {
 														<div
 															class="ll8tlv6m j83agx80 btwxx1t3 n851cfcs hv4rvrfc dati1w0a pybr56ya"
 														>
-															<div class="oi9244e8 do00u71z j83agx80">
+                                                                                                          
+															<div class="oi9244e8 do00u71z j83agx80" >
 																<span class="nc684nl6"
 																	><a
 																		aria-hidden="true"
 																		class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl gpro0wi8 oo9gr5id"
-																		href="https://web.facebook.com/DataEntryBadar?__cft__[0]=AZX_foETgaBkoSlbO-QOylaF0HifLuBNY1279NiyiYTJCTDDFZFv8vQ-DJ3EpWAFlXAtHnaekTPjxkWntCkYf53F2MAtg_bVYXL8ddAz3nJGrsA-qsN_A5-0L3YA95Tmt9vH4-jnMAfqCknkLPd7AO8-g_f0zSzHvzZ_M-zFotx8_Q&amp;__tn__=%3C%2CP-R"
+		
 																		role="link"
 																		tabindex="-1"
 																		><div class="q676j6op qypqp5cg">
@@ -49,8 +50,7 @@ export const fbCard = (post:Posts):String => {
 																				<a
 																					aria-label="${post.name}"
 																					class="oajrlxb2 gs1a9yip g5ia77u1 mtkw9kbi tlpljxtp qensuy8j ppp5ayq2 goun2846 ccm00jje s44p3ltw mk2mc5f4 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 rq0escxv nhd2j8a9 mg4g778l pfnyh3mw p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x tgvbjcpo hpfvmrgz jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso l9j0dhe7 i1ao9s8h esuyzwwr f1sip0of du4w35lb n00je7tq arfg74bv qs9ysxi8 k77z8yql btwxx1t3 abiwlrkh p8dawk7l lzcic4wl oo9gr5id q9uorilb"
-																					href="https://web.facebook.com/DataEntryBadar?__cft__[0]=AZX_foETgaBkoSlbO-QOylaF0HifLuBNY1279NiyiYTJCTDDFZFv8vQ-DJ3EpWAFlXAtHnaekTPjxkWntCkYf53F2MAtg_bVYXL8ddAz3nJGrsA-qsN_A5-0L3YA95Tmt9vH4-jnMAfqCknkLPd7AO8-g_f0zSzHvzZ_M-zFotx8_Q&amp;__tn__=%3C%3C%2CP-R"
-																					role="link"
+																																			role="link"
 																					tabindex="0"
 																					><div
 																						class="q9uorilb l9j0dhe7 pzggbiyp du4w35lb"
@@ -78,18 +78,16 @@ export const fbCard = (post:Posts):String => {
 																								></circle>
 																							</mask>
 																							<g mask="url(#jsc_c_2s)">
-																								<image
+																								<img
 																									style="
 																										height: 40px;
 																										width: 40px;
 																									"
-																									x="0"
-																									y="0"
-																									height="100%"
-																									preserveAspectRatio="xMidYMid slice"
+																																	height="100%"
+																								
 																									width="100%"
-																									xlink:href="https://scontent.fisb4-1.fna.fbcdn.net/v/t39.30808-1/287741277_701445647817397_2049620829302671373_n.jpg?stp=cp0_dst-jpg_p40x40&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=7206a8&amp;_nc_eui2=AeFt0cxmdCjhnvzhyVmdpjXH5CR4FWIvvJnkJHgVYi-8mSLHLoIwxRj5177D3yQoYlVejoEBPi9qsZp3Qal7Ghw7&amp;_nc_ohc=Ke0wG_1pvjEAX-DPjfe&amp;_nc_ht=scontent.fisb4-1.fna&amp;oh=00_AT-FEQcmpPWEmayyPXA__RQgfNLfOfOTO_inFyNgTGI0jg&amp;oe=62C2EDCE"
-																								></image>
+																									src=${post.img}
+																								></img>
 																								<circle
 																									class="mlqo0dh0 georvekb s6kb5r3f"
 																									cx="20"
@@ -155,7 +153,7 @@ export const fbCard = (post:Posts):String => {
 																				<span class="nc684nl6"
 																					><a
 																						class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl gpro0wi8 oo9gr5id lrazzd5p"
-																						href="https://web.facebook.com/DataEntryBadar?__cft__[0]=AZX_foETgaBkoSlbO-QOylaF0HifLuBNY1279NiyiYTJCTDDFZFv8vQ-DJ3EpWAFlXAtHnaekTPjxkWntCkYf53F2MAtg_bVYXL8ddAz3nJGrsA-qsN_A5-0L3YA95Tmt9vH4-jnMAfqCknkLPd7AO8-g_f0zSzHvzZ_M-zFotx8_Q&amp;__tn__=-UC%2CP-R"
+																						href="${post.link}"
 																						role="link"
 																						tabindex="0"
 																						><strong
@@ -504,7 +502,7 @@ export const fbCard = (post:Posts):String => {
 																									>
 																										<img
 																											class="hu5pjgll m6k467ps"
-																											src="https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/IY7_xqHkrTm.png?_nc_eui2=AeG_9omkHbryOhhYSPS60QpNApEyPS3PRjsCkTI9Lc9GO9YrBPD2iMHKqcnsYqMh2vbzHKoXXbnBu8b9Xkm8eiXq"
+																											src="${post.img}"
 																											alt="Friends"
 																											width="12"
 																											height="12"
@@ -625,7 +623,7 @@ export const fbCard = (post:Posts):String => {
 																										data-visualcompletion="css-img"
 																										class="hu5pjgll m6k467ps"
 																										style="
-																											background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																											background-image: url('${post.img}');
 																											background-position: 0 -297px;
 																											background-size: auto;
 																											width: 18px;
@@ -662,7 +660,7 @@ export const fbCard = (post:Posts):String => {
 																							data-visualcompletion="css-img"
 																							class="hu5pjgll m6k467ps"
 																							style="
-																								background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/6AzcItiA6bS.png?_nc_eui2=AeGS5ff1JHLvOGb9drGOkxGT22J2Yykmb6fbYnZjKSZvpwy-DGxUTkYLeMkXXwWbTEVhfOclqbr1QvNPbSjPMUZB');
+																								background-image: url('${post.img}');
 																								background-position: -102px -109px;
 																								background-size: auto;
 																								width: 16px;
@@ -696,7 +694,7 @@ export const fbCard = (post:Posts):String => {
 																									data-visualcompletion="css-img"
 																									class="hu5pjgll m6k467ps"
 																									style="
-																										background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																										background-image: url('${post.img}');
 																										background-position: 0 -259px;
 																										background-size: auto;
 																										width: 18px;
@@ -742,7 +740,7 @@ export const fbCard = (post:Posts):String => {
 																									data-visualcompletion="css-img"
 																									class="hu5pjgll m6k467ps"
 																									style="
-																										background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																										background-image: url('${post.img}');
 																										background-position: 0 -316px;
 																										background-size: auto;
 																										width: 18px;
@@ -847,7 +845,7 @@ export const fbCard = (post:Posts):String => {
 																									height="100%"
 																									preserveAspectRatio="xMidYMid slice"
 																									width="100%"
-																									xlink:href="https://scontent.fisb4-1.fna.fbcdn.net/v/t39.30808-1/287741277_701445647817397_2049620829302671373_n.jpg?stp=cp0_dst-jpg_p32x32&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=7206a8&amp;_nc_eui2=AeFt0cxmdCjhnvzhyVmdpjXH5CR4FWIvvJnkJHgVYi-8mSLHLoIwxRj5177D3yQoYlVejoEBPi9qsZp3Qal7Ghw7&amp;_nc_ohc=Ke0wG_1pvjEAX-DPjfe&amp;_nc_ht=scontent.fisb4-1.fna&amp;oh=00_AT-TsJOnZBCbrKGad7PNOI9fD00cZGvHFtJH6WWX8egHzw&amp;oe=62C2EDCE"
+																									xlink:href="${post.img}"
 																								></image>
 																								<circle
 																									class="mlqo0dh0 georvekb s6kb5r3f"
@@ -953,7 +951,7 @@ export const fbCard = (post:Posts):String => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																													background-image: url('${post.img}');
 																													background-position: 0px -335px;
 																													background-size: auto;
 																													width: 16px;
@@ -984,7 +982,7 @@ export const fbCard = (post:Posts):String => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																													background-image: url('${post.img}');
 																													background-position: 0px -471px;
 																													background-size: auto;
 																													width: 16px;
@@ -1015,7 +1013,7 @@ export const fbCard = (post:Posts):String => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																													background-image: url('${post.img}');
 																													background-position: 0px -403px;
 																													background-size: auto;
 																													width: 16px;
@@ -1050,7 +1048,7 @@ export const fbCard = (post:Posts):String => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																													background-image: url('${post.img}');
 																													background-position: 0px -505px;
 																													background-size: auto;
 																													width: 16px;
@@ -1081,7 +1079,7 @@ export const fbCard = (post:Posts):String => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y9B7OhQbIRL.png?_nc_eui2=AeHPoU-vphUSlj4s1OQbTd2FwixFIw-3ZqXCLEUjD7dmpeAVhT3gHlR1kJt9Zq3_4y57AkbDk9I20nhEhETyvhD_');
+																													background-image: url('${post.img}');
 																													background-position: 0px -607px;
 																													background-size: auto;
 																													width: 16px;

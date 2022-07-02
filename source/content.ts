@@ -9,14 +9,14 @@ async function init() {
 	// 	const roleFeed = document.querySelector('[role=feed]') as HTMLDivElement;
 	// roleFeed.innerHTML='<p>Hi I am Injected In feeds</p>'+roleFeed.innerHTML
 	//   }, 60000);
-	window.onload = function () {
-		const post = new Posts('<p>Hi I am Injected In feeds</p>', 'Dr Ah', 'Injected');
+	// window.onload = function () {
+		const post = new Posts('<p>Hi I am Injected In feeds</p>', 'Dr Ah', 'Injected',"https://cognitiveseo.com/blog/wp-content/uploads/2019/11/URL-structure_cognitiveSEO.jpg",'https://cognitiveseo.com/blog/wp-content/uploads/2019/11/URL-structure_cognitiveSEO.jpg');
 		const injected=fbCard(post);
 		console.log(injected);
 		const roleFeed = document.querySelector('[role=feed]') as HTMLDivElement;
 		roleFeed.innerHTML=injected+roleFeed.innerHTML;
 
-	}
+	// }
 
 	
 	
