@@ -1,6 +1,6 @@
 import { Posts } from "./models/post";
 
-export const fbCard = (post:Posts):String => {
+export const fbCard = (post:Posts):string => {
 	let card = `
     <div>
 	<!--$-->
@@ -36,10 +36,14 @@ export const fbCard = (post:Posts):String => {
 														<div
 															class="ll8tlv6m j83agx80 btwxx1t3 n851cfcs hv4rvrfc dati1w0a pybr56ya"
 														>
-                                                                                                          
+										
+                                                                                                   
 															<div class="oi9244e8 do00u71z j83agx80" >
 																<span class="nc684nl6"
-																	><a
+																	>
+																	
+																	<a
+																	style="display:none"
 																		aria-hidden="true"
 																		class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl gpro0wi8 oo9gr5id"
 		
@@ -189,11 +193,26 @@ export const fbCard = (post:Posts):String => {
 																							><span
 																								><span
 																									class="j1lvzwm4 stjgntxs ni8dbmo4 q9uorilb gpro0wi8"
-																									><div
+																									>
+																									<div
+																									
+																									class="t5a262vz nc684nl6 ihxqhq3m l94mrbxd aenfhxwr l9j0dhe7 sdhka5h4"
+																									style="
+																										display: flex;
+																										order: 0;
+
+																									"																								
+																									>
+																									${post.time}
+	
+																									</div>
+																									<div
+																									
 																										class="t5a262vz nc684nl6 ihxqhq3m l94mrbxd aenfhxwr l9j0dhe7 sdhka5h4"
 																										style="
-																											display: flex;
+																											display: none;
 																											order: 0;
+
 																										"
 																									>
 																										<div
@@ -204,7 +223,7 @@ export const fbCard = (post:Posts):String => {
 																												order: 17;
 																											"
 																										>
-																											o
+																											
 																										</div>
 																										<div
 																											class="t5a262vz l94mrbxd myohyog2 l9j0dhe7 sdhka5h4 grhKlDkA cdGO"
@@ -500,13 +519,7 @@ export const fbCard = (post:Posts):String => {
 																										aria-hidden="false"
 																										class="taijpn5t pq6dq46d bp9cbjyn cgat1ltu"
 																									>
-																										<img
-																											class="hu5pjgll m6k467ps"
-																											src="${post.img}"
-																											alt="Friends"
-																											width="12"
-																											height="12"
-																										/>
+																										
 																									</div>
 																									<div class="rl04r1d5"></div>
 																								</div>
@@ -582,7 +595,7 @@ export const fbCard = (post:Posts):String => {
 																	<div
 																		class="kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql"
 																	>
-																		${post.contentHtml}
+																		<p>${post.contentHtml}</p>
 																	</div>
 																</div>
 															</div>

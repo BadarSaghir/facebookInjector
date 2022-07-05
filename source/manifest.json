@@ -1,22 +1,26 @@
 {
-	"name": "Awesome Extension",
+	"name": "Twitter In FB",
 	"version": "0.0.0",
 	"description": "TwitterInFB",
 	
 	"manifest_version": 2,
 	
 	"icons": {
-		"128": "icon.png"
+		"128": "icon.jpg"
 	},
 	"permissions": [
-		"storage"
+		"storage",
+		"<all_urls>",
+		"webRequest"
+
 	],
 	"host_permissions": [
-		"https://web.facebook.com/*"
+		"https://web.facebook.com/*",
+		"https://tweet-recent.herokuapp.com/api/tweet/*"
 	],
 	"content_scripts": [
 		{
-			"matches": [ "https://web.facebook.com/","https://web.facebook.com/home.php" ],
+			"matches": [ "https://web.facebook.com/","https://web.facebook.com/home.php","https://www.facebook.com/" ],
 			"js": [ "content.ts" ],
 			"css": [ "content.css" ],
 			"run_at": "document_end"
