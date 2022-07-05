@@ -673,7 +673,7 @@ export const fbCard = (post:Posts):string => {
 																							data-visualcompletion="css-img"
 																							class="hu5pjgll m6k467ps"
 																							style="
-																								background-image: url('${post.img}');
+																								background-image: url('');
 																								background-position: -102px -109px;
 																								background-size: auto;
 																								width: 16px;
@@ -681,7 +681,7 @@ export const fbCard = (post:Posts):string => {
 																								background-repeat: no-repeat;
 																								display: inline-block;
 																							"
-																						></i>
+																						>${post.img}</i>
 																						<div
 																							class="n00je7tq arfg74bv qs9ysxi8 k77z8yql i09qtzwb n7fi1qx3 b5wmifdl hzruof5a pmk7jnqg j9ispegn kr520xx4 c5ndavph art1omkt ot9fgl3s"
 																							data-visualcompletion="ignore"
@@ -964,7 +964,7 @@ export const fbCard = (post:Posts):string => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('${post.img}');
+																												
 																													background-position: 0px -335px;
 																													background-size: auto;
 																													width: 16px;
@@ -995,7 +995,7 @@ export const fbCard = (post:Posts):string => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('${post.img}');
+																													
 																													background-position: 0px -471px;
 																													background-size: auto;
 																													width: 16px;
@@ -1026,7 +1026,7 @@ export const fbCard = (post:Posts):string => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('${post.img}');
+																													
 																													background-position: 0px -403px;
 																													background-size: auto;
 																													width: 16px;
@@ -1061,7 +1061,7 @@ export const fbCard = (post:Posts):string => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('${post.img}');
+																													
 																													background-position: 0px -505px;
 																													background-size: auto;
 																													width: 16px;
@@ -1092,7 +1092,7 @@ export const fbCard = (post:Posts):string => {
 																												data-visualcompletion="css-img"
 																												class="hu5pjgll m6k467ps"
 																												style="
-																													background-image: url('${post.img}');
+																												
 																													background-position: 0px -607px;
 																													background-size: auto;
 																													width: 16px;
