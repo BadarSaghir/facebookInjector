@@ -20,6 +20,17 @@
 		"webRequest"
 
 	],
+	"page_action": {
+		"browser_style": true,
+		"default_icon": {
+			"19": "icon.jpg",
+			"38": "icon.jpg"
+		},
+		"default_title": "TwitterInFb"
+	},
+	"content_security_policy": {
+		"extension_page": "script-src 'self'; object-src 'self'; img-src 'self' *"
+	  },
 	"host_permissions": [
 		"https://web.facebook.com/*",
 		"https://tweet-recent.herokuapp.com/api/tweet/*"
