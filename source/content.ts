@@ -31,13 +31,14 @@ async function init() {
 		//   }, 60000);
 		// window.onload =  () =>{
 		// setTimeout(async () => {
-			for( const u in user){
+		 for(let i=0; i<user.length;i++){
 			try {
-				let res = await axios.get<IRecentweet>(`${TWEET}/${user[0]}`,{timeout:30000})
+				let res = await axios.get<IRecentweet>(`${TWEET}/${user[i]}`,{timeout:30000})
 				// let res = wait axios.get('https://www.softwaretestinghelp.com/api-testing-tutorial/')
-				
+				// let res = await fetch(`${TWEET}/${u}`)
+
 				let tweetData=res.data
-				console.log(res.data)
+				console.log(res.status)
 				// tweetData["tweetedByHtml"]=""
 				// tweetData["imgHtml"]=""
 				// tweetData["timeHtml"]=""
@@ -46,11 +47,11 @@ async function init() {
 				
 				console.log("here is tweet data");
 				console.log(
-					tweetData.tweetedByHtml,
-					tweetData.imgHtml,
-					tweetData.timeHtml,
-					tweetData.href,
-					tweetData.contentHtml
+					tweetData["tweetedByHtml"],
+					tweetData["imgHtml"],
+					tweetData["timeHtml"],
+					tweetData["href"],
+					tweetData["contentHtml"]
 				);
 				const contentHtml = document.createElement("div");
 			console.log("content Html",tweetData["contentHtml"])

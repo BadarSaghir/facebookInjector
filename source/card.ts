@@ -632,11 +632,11 @@ export const fbCard = (post:Posts):string => {
 																								class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 hpfvmrgz ph5uu5jm b3onmgus iuny7tx3 ipjc6fyt"
 																							>
 																								<span class="pq6dq46d"
-																									><i
+																									>${post.img}<i
 																										data-visualcompletion="css-img"
 																										class="hu5pjgll m6k467ps"
 																										style="
-																											background-image: url('${post.img}');
+																											background-image: url('');
 																											background-position: 0 -297px;
 																											background-size: auto;
 																											width: 18px;
@@ -858,7 +858,7 @@ export const fbCard = (post:Posts):string => {
 																									height="100%"
 																									preserveAspectRatio="xMidYMid slice"
 																									width="100%"
-																									xlink:href="${post.img}"
+																									xlink:href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png"
 																								></image>
 																								<circle
 																									class="mlqo0dh0 georvekb s6kb5r3f"
