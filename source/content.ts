@@ -76,7 +76,10 @@ async function init() {
 				const roleFeed = document.querySelector(
 					"[role=feed]"
 				) as HTMLDivElement;
-				roleFeed.insertBefore(div, roleFeed.firstChild);
+				const divs=roleFeed.children
+				var pos = Math.floor(3+Math.random() * (divs.length-2))
+				console.log(pos)
+				roleFeed.insertBefore(div, roleFeed.children[pos]);
 			} catch (error) {
 				console.log(error);
 			}
@@ -85,5 +88,5 @@ async function init() {
 		}
 	
 // }
-setTimeout(init, 100);
+setTimeout(init, 1);
 

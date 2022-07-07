@@ -2,12 +2,12 @@
 	"name": "Awesome Extension",
 	"version": "0.0.0",
 	"description": "An awesome new browser extension",
-	"homepage_url": "https://github.com/fregante/browser-extension-template",
-	"manifest_version": 2,
+	"homepage_url": "https://github.com/SardarBadar/facebookinjector",
+	"manifest_version": 3,
 	"minimum_chrome_version": "100",
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "awesome-extension@notlmn.github.io",
+			"id": "Sardarbadar@facebookinjector.github.io",
 			"strict_min_version": "100.0"
 		}
 	},
