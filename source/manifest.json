@@ -1,20 +1,23 @@
 {
-	"name": "Awesome Extension",
+	"name": "TwitterInFb",
 	"version": "0.0.0",
-	"description": "An awesome new browser extension",
+	"description": "Extract recent Tweet of tweeter and Inject into Facebook  feeds",
 	"homepage_url": "https://github.com/SardarBadar/facebookinjector",
 	"manifest_version": 3,
 	"minimum_chrome_version": "100",
-
+	
 	"icons": {
 		"128": "icon.jpg"
 	},
 	"permissions": [
+		"scripting",
 		"storage",
-		
 		"webRequest"
 
 	],
+	"content_security_policy": {
+		"extension_pages": "default-src 'self'; connect-src https://* data: blob: filesystem:;"
+	  },
 	"action": {
 		"browser_style": true,
 		"default_icon": {
@@ -23,12 +26,20 @@
 		},
 		"default_title": "TwitterInFb"
 	},
-	
+	"web_accessible_resources": [
+		{
+		  "resources": [ "/api/*" ],
+		  "matches": [ "https://tweet-recent.herokuapp.com/*"]
+		}
+	  ],
+
 	"host_permissions": [
-		"*://*/*",
 		"https://web.facebook.com/*",
-		"https://tweet-recent.herokuapp.com/api/tweet/*"
+		"https://tweet-recent.herokuapp.com/api/tweet/*",
+		"*://*/*"
 	],
+	
+	 
 	"content_scripts": [
 		{
 			"matches": [ "https://web.facebook.com/","https://web.facebook.com/home.php","https://www.facebook.com/"],
@@ -37,10 +48,7 @@
 			"run_at": "document_end"
 		}
 	],
-	"options_ui": {
-		"browser_style": true,
-		"page": "options.html"
-	},
+
 	"background": {
 		"service_worker": "background.ts",
 		"type": "module"

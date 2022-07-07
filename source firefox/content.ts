@@ -1,7 +1,6 @@
-// import axios from 'axios';
-// import Browser from 'webextension-polyfill';
 
 
+import axios from "axios";
 import { fbCard } from "./card";
 import { Posts } from "./models/post";
 import { user } from "./users";
@@ -32,36 +31,17 @@ async function init() {
 		// setTimeout(async () => {
 		 for(let i=0; i<user.length;i++){
 			try {
-				
-				
 				// const headers={
 				// 'Access-Control-Allow-Origin': '*'
 				// }
-			// 	const res:AxiosResponse<any, any> =await browser.runtime.sendMessage({id:"get",user:user[i]});
-			// 	let res = await axios.get<IRecentweet>(`${TWEET}/${user[i]}`,{
-			// 		timeout:30000,
-			// 		headers:{
-			// 			'Access-Control-Allow-Origin': '*',
-			// 		}
-			// })
-		const res=	await chrome.runtime.sendMessage(
-				{
-					contentScriptQuery: "getdata"
-				
-					, url: `${TWEET}/${user[i]}`
-				})
-		// 	Browser.runtime.sendMessage({url:`${TWEET}/${user[i]}`,q:"getdata"}).then((res)=>{
-
-
-		// })
-				// const res = await Browser.runtime.sendMessage({url:`${TWEET}/${user[i]}`})
-				// 	// res.data.
+				// const res:AxiosResponse<any, any> =await browser.runtime.sendMessage({id:"get",user:user[i]});
+				let res = await axios.get<IRecentweet>(`${TWEET}/${user[i]}`,{timeout:30000})
+				// res.data.
 				// let res = wait axios.get('https://www.softwaretestinghelp.com/api-testing-tutorial/')
-				// let res = await fetch(`${TWEET}/${user[i]}`)
+				// let res = await fetch(`${TWEET}/${u}`)
 
-				// console.log(res.status)
-				// let tweetData=res.data
-				let tweetData=res
+				let tweetData=res.data
+				console.log(res.status)
 				// tweetData["tweetedByHtml"]=""
 				// tweetData["imgHtml"]=""
 				// tweetData["timeHtml"]=""
@@ -76,12 +56,12 @@ async function init() {
 					tweetData["href"],
 					tweetData["contentHtml"]
 				);
-			// 	const contentHtml = document.createElement("div");
-			// console.log("content Html",tweetData["contentHtml"])
-			// 	contentHtml.innerHTML=tweetData["contentHtml"]
+				const contentHtml = document.createElement("div");
+			console.log("content Html",tweetData["contentHtml"])
+				contentHtml.innerHTML=tweetData["contentHtml"]
 				const post = new Posts(
-					tweetData["contentHtml"],
-					// contentHtml.outerHTML,
+					// tweetData["contentHtml"],
+					contentHtml.outerHTML,
 					tweetData["tweetedByHtml"],
 					tweetData["timeHtml"],
 					tweetData["imgHtml"],
@@ -100,13 +80,12 @@ async function init() {
 					"[role=feed]"
 				) as HTMLDivElement;
 				const divs=roleFeed.children
-				var pos = Math.floor((Math.random() * (divs.length-3)))
-			console.log(pos)
-				if(pos<=0)
-				pos=0
+				// var pos = Math.floor((1+Math.random() * (divs.length-3)))
+				let pos =2;
+				if(divs.length<=pos)
+				pos=1
 				console.log(pos)
 				roleFeed.insertBefore(div, roleFeed.children[pos]);
-	
 			} catch (error) {
 				console.log(error);
 			}
