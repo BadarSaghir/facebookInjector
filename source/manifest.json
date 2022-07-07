@@ -1,24 +1,41 @@
 {
-	"name": "TwitterInFb",
+	"name": "Twitter In FB",
 	"version": "0.0.0",
-	"description": "Extract recent Tweet of tweeter and Inject into Facebook  feeds",
-	"homepage_url": "https://github.com/SardarBadar/facebookinjector",
-	"manifest_version": 3,
-	"minimum_chrome_version": "100",
-	
+	"description": "TwitterInFB",
+	"manifest_version": 2,
 	"icons": {
-		"128": "icon.jpg"
+		"128": "icon.jpg",
+		"48": "icon.jpg",
+		"96": "icon.jpg"
 	},
-	"permissions": [
-		"scripting",
-		"storage",
-		"webRequest"
-
-	],
-	"content_security_policy": {
-		"extension_pages": "default-src 'self'; connect-src https://* data: blob: filesystem:;"
+	"browser_specific_settings": {
+		"gecko": {
+		  "id": "tif@dataentrybadar.com"
+		}
 	  },
-	"action": {
+	  
+	"permissions": [
+		"storage",
+		"<all_urls>",
+		"webRequest"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://web.facebook.com/",
+				"https://web.facebook.com/home.php",
+				"https://www.facebook.com/"
+			],
+			"js": [
+				"content.ts"
+			],
+			"css": [
+				"content.css"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"page_action": {
 		"browser_style": true,
 		"default_icon": {
 			"19": "icon.jpg",
@@ -26,31 +43,15 @@
 		},
 		"default_title": "TwitterInFb"
 	},
-	"web_accessible_resources": [
-		{
-		  "resources": [ "/api/*" ],
-		  "matches": [ "https://tweet-recent.herokuapp.com/*"]
-		}
-	  ],
+	"content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self'",
 
-	"host_permissions": [
-		"https://web.facebook.com/*",
-		"https://tweet-recent.herokuapp.com/api/tweet/*",
-		"*://*/*"
-	],
-	
-	 
-	"content_scripts": [
-		{
-			"matches": [ "https://web.facebook.com/","https://web.facebook.com/home.php","https://www.facebook.com/"],
-			"js": [ "content.ts" ],
-			"css": [ "content.css" ],
-			"run_at": "document_end"
-		}
-	],
-
+	"options_ui": {
+		"browser_style": true,
+		"page": "options.html"
+	},
 	"background": {
-		"service_worker": "background.ts",
-		"type": "module"
+		"scripts": [
+			"background.ts"
+		]
 	}
 }
