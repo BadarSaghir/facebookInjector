@@ -632,7 +632,7 @@ export const fbCard = (post:Posts):string => {
 																								class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 hpfvmrgz ph5uu5jm b3onmgus iuny7tx3 ipjc6fyt"
 																							>
 																								<span class="pq6dq46d"
-																									>${post.img}<i
+																									><i
 																										data-visualcompletion="css-img"
 																										class="hu5pjgll m6k467ps"
 																										style="
@@ -681,7 +681,7 @@ export const fbCard = (post:Posts):string => {
 																								background-repeat: no-repeat;
 																								display: inline-block;
 																							"
-																						>${post.img}</i>
+																						></i>
 																						<div
 																							class="n00je7tq arfg74bv qs9ysxi8 k77z8yql i09qtzwb n7fi1qx3 b5wmifdl hzruof5a pmk7jnqg j9ispegn kr520xx4 c5ndavph art1omkt ot9fgl3s"
 																							data-visualcompletion="ignore"
