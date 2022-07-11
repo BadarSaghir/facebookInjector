@@ -1,13 +1,15 @@
 {
 	"private": true,
 	"scripts": {
-		"build": "parcel build source/manifest.json --no-content-hash --no-source-maps --dist-dir facebookTweetInjector --no-cache --detailed-report 0",
+		"build:firefox": "parcel build source/manifest.json --no-content-hash --no-source-maps --dist-dir facebookTweetInjector_firefox --no-cache --detailed-report 0",
+		"build:chrome": "parcel build source_chrome/manifest.json --no-content-hash --no-source-maps --dist-dir facebookTweetInjector_chrome --no-cache --detailed-report 0",
 		"lint": "run-p lint:*",
 		"lint-fix": "run-p 'lint:* -- --fix'",
 		"lint:css": "stylelint source/**/*.css",
 		"lint:js": "xo",
 		"test": "run-p lint:* build",
-		"watch": "parcel watch source/manifest.json --no-content-hash --dist-dir facebookTweetInjector --no-cache --no-hmr"
+		"watch:firefox": "parcel watch source/manifest.json --no-content-hash --dist-dir facebookTweetInjector --no-cache --no-hmr",
+		"watch:chrome": "parcel watch source_chrome/manifest.json --no-content-hash --dist-dir facebookTweetInjector --no-cache --no-hmr"
 	},
 	"browserslist": [
 		"last 1 Chrome version",

@@ -44,6 +44,7 @@ export async function init(random=true) {
 			// 			'Access-Control-Allow-Origin': '*',
 			// 		}
 			// })
+			
 		const res=	await chrome.runtime.sendMessage(
 				{
 					contentScriptQuery: "getdata"
