@@ -1,6 +1,6 @@
 {
 	"name": "TwitterInFb",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Extract recent Tweet of tweeter and Inject into Facebook  feeds",
 	"homepage_url": "https://github.com/SardarBadar/facebookinjector",
 	"manifest_version": 3,
@@ -12,6 +12,9 @@
 	"permissions": [
 		"scripting",
 		"storage",
+		"webRequest",
+		"activeTab",
+		"webNavigation",
 		"webRequest"
 
 	],
@@ -50,6 +53,7 @@
 			"matches": [
 				"https://web.facebook.com/groups/treatearly",
 				"https://mobile.facebook.com/groups/treatearly",
+				"https://web.facebook.com/groups/984165912191143/*",
 				"https://www.facebook.com/groups/treatearly"
 			],
 			"js": [

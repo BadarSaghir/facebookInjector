@@ -18,5 +18,7 @@
     $parcel$inits[id] = init;
   }, $parcel$global.parcelRequire94c2 = parcelRequire);
   var $dMBup = parcelRequire("dMBup");
-  setTimeout($dMBup.init, 1);
+  setTimeout((() => {
+    (0, $dMBup.init)(!1);
+  }), 1);
 })();

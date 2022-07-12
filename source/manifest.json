@@ -17,7 +17,9 @@
 	"permissions": [
 		"storage",
 		"<all_urls>",
-		"webRequest"
+		"webNavigation",
+		"webRequest",
+		"activeTab"
 	],
 	"content_scripts": [
 		
@@ -33,19 +35,21 @@
 			"css": [
 				"content.css"
 			],
-			"run_at": "document_end"
+			"run_at": "document_idle"
 		},
 		{
 			"matches": [
 				"https://web.facebook.com/groups/treatearly",
 				"https://mobile.facebook.com/groups/treatearly",
-				"https://www.facebook.com/groups/treatearly"
+				"https://web.facebook.com/groups/treatearly/?notif_id=*",
+				"https://web.facebook.com/groups/984165912191143/*",
+				"https://www.facebook.com/groups/treatearly/"
 			],
 			"js": [
 				"group.ts"
 			],
 			
-			"run_at": "document_end"
+			"run_at": "document_idle"
 		}
 	],
 	"page_action": {

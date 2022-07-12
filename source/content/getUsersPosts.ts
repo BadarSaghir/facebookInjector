@@ -1,3 +1,4 @@
+import { SetReload } from './sharevariable';
 import axios from "axios";
 import { fbCard } from "../card";
 import { Posts } from "../models/post";
@@ -88,6 +89,7 @@ export async function init(post_random:boolean=true) {
                 }else{
                     roleFeed.insertBefore(div, roleFeed.firstChild);
                 }
+				SetReload.reload=true;
 			} catch (error) {
 				console.log(error);
 			}
