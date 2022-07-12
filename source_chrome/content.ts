@@ -1,3 +1,5 @@
 import { init } from "./content/getUsersPosts";
 
-setTimeout(init, 1);
+window.onload = () => {
+setTimeout(init, 500);
+}

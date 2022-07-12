@@ -4,7 +4,7 @@ import browser from 'webextension-polyfill';
 console.log('background.ts');
 
 
-let previousUrl:string;	
+let previousUrl:string="https://web.facebook.com";	
 //execute content script when url is equal to facebook.com in PWA mode
  const onHistoryStateUpdatedListener= browser.webNavigation.onHistoryStateUpdated.addListener((details) => {
     // if (details.url.includes('facebook.com')) {
@@ -22,8 +22,9 @@ let previousUrl:string;
   // reload the current tab without infinite loop of reloading
   if(details.url!=previousUrl){
     console.log(details,previousUrl)
-    browser.tabs.reload(details.tabId, {bypassCache: true});
     previousUrl=details.url;
+    browser.tabs.reload(details.tabId);
+   
   }
   
     }
