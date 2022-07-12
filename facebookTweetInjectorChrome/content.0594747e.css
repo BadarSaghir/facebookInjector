@@ -1,0 +1,10 @@
+#text-notice {
+  z-index: 999999;
+  background: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VzIjpbInNvdXJjZV9jaHJvbWUvY29udGVudC5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiI3RleHQtbm90aWNlIHtcblx0cG9zaXRpb246IGZpeGVkO1xuXHRib3R0b206IDEwcHg7XG5cdHJpZ2h0OiAxMHB4O1xuXHRwYWRkaW5nOiAxMHB4O1xuXHRiYWNrZ3JvdW5kOiAjZmZmO1xuXHR6LWluZGV4OiA5OTk5OTk7XG59XG4iXSwibmFtZXMiOltdLCJ2ZXJzaW9uIjozLCJmaWxlIjoiY29udGVudC4wNTk0NzQ3ZS5jc3MubWFwIn0= */
