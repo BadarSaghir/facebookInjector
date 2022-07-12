@@ -161,7 +161,7 @@ export const fbCard = (post:Posts):string => {
 																						role="link"
 																						tabindex="0"
 																						><strong
-																							><span>${post.name}</span></strong
+																							><span> From ${post.name}</span></strong
 																						></a
 																					></span
 																				>
@@ -187,7 +187,7 @@ export const fbCard = (post:Posts):string => {
 																						class="tojvnm2t a6sixzi8 abs2jz4q a8s20v7p t1p8iaqh k5wvi7nf q3lfd5jv pk4s997a bipmatt0 cebpdrjk qowsmv63 owwhemhu dp1hu0rb dhp61c6y iyyx5f41"
 																						><a
 																							class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl gmql0nx0 gpro0wi8 b1v8xokw"
-																							href="#"
+																							href="${post.link}"
 																							role="link"
 																							tabindex="0"
 																							><span
@@ -632,7 +632,7 @@ export const fbCard = (post:Posts):string => {
 																								class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 hpfvmrgz ph5uu5jm b3onmgus iuny7tx3 ipjc6fyt"
 																							>
 																								<span class="pq6dq46d"
-																									>${post.img}<i
+																									><i
 																										data-visualcompletion="css-img"
 																										class="hu5pjgll m6k467ps"
 																										style="
@@ -681,7 +681,7 @@ export const fbCard = (post:Posts):string => {
 																								background-repeat: no-repeat;
 																								display: inline-block;
 																							"
-																						>${post.img}</i>
+																						></i>
 																						<div
 																							class="n00je7tq arfg74bv qs9ysxi8 k77z8yql i09qtzwb n7fi1qx3 b5wmifdl hzruof5a pmk7jnqg j9ispegn kr520xx4 c5ndavph art1omkt ot9fgl3s"
 																							data-visualcompletion="ignore"

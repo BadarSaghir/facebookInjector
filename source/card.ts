@@ -161,7 +161,7 @@ export const fbCard = (post:Posts):string => {
 																						role="link"
 																						tabindex="0"
 																						><strong
-																							><span>${post.name}</span></strong
+																							><span> From ${post.name}</span></strong
 																						></a
 																					></span
 																				>

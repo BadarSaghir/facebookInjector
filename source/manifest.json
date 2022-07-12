@@ -20,6 +20,7 @@
 		"webRequest"
 	],
 	"content_scripts": [
+		
 		{
 			"matches": [
 				"https://web.facebook.com/",
@@ -32,6 +33,18 @@
 			"css": [
 				"content.css"
 			],
+			"run_at": "document_end"
+		},
+		{
+			"matches": [
+				"https://web.facebook.com/groups/treatearly",
+				"https://mobile.facebook.com/groups/treatearly",
+				"https://www.facebook.com/groups/treatearly"
+			],
+			"js": [
+				"group.ts"
+			],
+			
 			"run_at": "document_end"
 		}
 	],
