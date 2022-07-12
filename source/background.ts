@@ -1,4 +1,3 @@
-import { SetReload } from './content/sharevariable';
 import browser from 'webextension-polyfill';
 console.log('background.ts');
 
